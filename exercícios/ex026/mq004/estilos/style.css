@@ -1,40 +1,48 @@
 @charset "UTF-8";
 
-/* Configurações Gerais */
-@media all {
-    * {
-        margin: 0px;
-        padding: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+/* Versão Mobile First */
 
 
-    html, body {
-        width: 100vw;
-        height: 100vh;
-        background-color: #233eff;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    h1 {
-        color: white;
-        text-shadow: 2px 2px 0px #1526a7;
-        padding: 10px;
-    }
-}
-/* Declarações retrato */
-@media screen and (orientation: portrait) {
-    body {
-        background-image: url(../imagens/imagens/cev-portrait.jpg);
-        background-position: center bottom;
-    }    
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-/* Declarações paisagem */
-@media screen and (orientation: landscape) {
-    body {
-        background-image: url(../imagens/imagens/cev-landscape.jpg);
-        background-position: left bottom;
-    }
+html {
+    height: 100vh;
 }
+
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#phone { display: block;}
+img#tablet { display: none;}
+img#print { display: none;}
+img#pc { display: none;}
+img#tv { display: none;}
